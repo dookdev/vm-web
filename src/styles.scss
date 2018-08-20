@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "assets/css/demo.css";
+@import "assets/css/nucleo-icons.css";
+@import "assets/sass/paper-kit.scss";
+//color theme #28D2AF
+.ngb-dp-navigation-chevron {
+    border-style: solid;
+    border-width: 0.2em 0.2em 0 0;
+    display: inline-block;
+    width: 0.75em;
+    height: 0.75em;
+    margin-left: 0.25em;
+    margin-right: 0.15em;
+    transform: rotate(0deg) !important;
+    -ms-transform: rotate(0deg);
+}
+
+.right .ngb-dp-navigation-chevron {
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg) !important;
+    margin-left: 0.15em;
+    margin-right: 0.25em;
+}

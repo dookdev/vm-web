@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg fixed-top bg-primary" color-on-scroll="500" id="my-nav">
+  <div class="container">
+    <div class="navbar-translate">
+      <a class="navbar-brand" href="#">VMALL</a>
+      <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbar-info" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
+        <span class="navbar-toggler-bar"></span>
+        <span class="navbar-toggler-bar"></span>
+        <span class="navbar-toggler-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-info">
+      <ul class="navbar-nav ml-auto" id="auth">
+        <li class="nav-item">
+          <a [routerLink]="['/login']" class="nav-link">
+            <i class="nc-icon nc-lock-circle-open"></i> เข้าสู่ระบบ</a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/register']" class="nav-link">
+            <i class="nc-icon nc-circle-10"></i>สมัครสมาชิก</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto" id="authsuccess">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/dashboard']">
+            <i class="nc-icon nc-badge" aria-hidden="true"></i>&nbsp;สมัครเข้าแข่งขัน</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/report']">
+            <i class="nc-icon nc-chart-bar-32" aria-hidden="true"></i>&nbsp;รายงานการแข่งขัน</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/registersport']">
+            <i class="nc-icon nc-single-02" aria-hidden="true"></i>&nbsp;ข้อมูลบุคคล</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)" (click)="logout()">
+            <i class="nc-icon nc-button-power" aria-hidden="true"></i>&nbsp;ออกจากระบบ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

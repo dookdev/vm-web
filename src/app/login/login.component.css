@@ -1,0 +1,53 @@
+.card-register {
+    background-color: #2b2b2b;
+}
+
+.card-register .social-line .btn {
+    margin-right: 0.4rem;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #28D2AF;
+    border-color: #28D2AF;
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color: #28D2AF;
+    border-color: #28D2AF;
+}
+
+.btn-info:focus,
+.btn-info.focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 210, 175, 0.5);
+}
+
+.btn-info.disabled,
+.btn-info:disabled {
+    color: #fff;
+    background-color: #24bf9d;
+    border-color: #24bf9d;
+}
+
+.btn-info:not(:disabled):not(.disabled):active,
+.btn-info:not(:disabled):not(.disabled).active,
+.show>.btn-info.dropdown-toggle {
+    color: #fff;
+    background-color: #24bf9d;
+    border-color: #24bf9d;
+}
+
+.btn-info:not(:disabled):not(.disabled):active:focus,
+.btn-info:not(:disabled):not(.disabled).active:focus,
+.show>.btn-info.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 210, 175, 0.5);
+}
+
+.card-register .title {
+    color: #28D2AF;
+}
+
+.btn-danger.btn-link {
+    color: #28D2AF;
+}
