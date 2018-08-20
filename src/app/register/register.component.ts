@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Api } from '../providers/service/api';
 import { Router } from '@angular/router';
+import { AuthGuardService } from '../providers/auth-guard/auth-guard.service';
 
 @Component({
   selector: 'app-register',
@@ -12,9 +13,10 @@ export class RegisterComponent implements OnInit {
     gender: ''
   };
 
-  constructor(public api: Api, public router: Router) { }
+  constructor(public auth: AuthGuardService, public api: Api, public router: Router) { }
 
   ngOnInit() {
+    this.auth.isLogedIn();
   }
 
   async register() {

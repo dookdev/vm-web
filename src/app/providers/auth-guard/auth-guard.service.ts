@@ -19,4 +19,13 @@ export class AuthGuardService {
       return false;
     }
   }
+
+  isLogedIn() {
+    const user: any = window.localStorage.getItem('user') ? JSON.parse(window.localStorage.getItem('user')) : null;
+    if (user && user.token) {
+      this.router.navigate(['/dashboard']);
+    } else {
+      return false;
+    }
+  }
 }

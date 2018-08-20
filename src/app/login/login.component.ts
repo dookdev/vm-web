@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Api } from '../providers/service/api';
 import { Router } from '@angular/router';
+import { AuthGuardService } from '../providers/auth-guard/auth-guard.service';
 
 @Component({
   selector: 'app-login',
@@ -10,10 +11,10 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   credential: any = {};
 
-  constructor(public api: Api, public router: Router) { }
+  constructor(public auth: AuthGuardService, public api: Api, public router: Router) { }
 
   ngOnInit() {
-
+    this.auth.isLogedIn();
   }
 
   async login() {
