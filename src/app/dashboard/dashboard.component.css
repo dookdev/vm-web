@@ -23,7 +23,7 @@
     min-height: 280px;
     padding-top: 40px;
     padding-bottom: 40px;
-    max-width: auto;
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
     color: #fff;
@@ -48,4 +48,9 @@
     line-height: 105px;
     color: #fff;
     border: 2px solid hsla(0, 0%, 100%, .3);
+}
+
+.card-description {
+    max-width: 100%;
+    width: 100rem;
 }
